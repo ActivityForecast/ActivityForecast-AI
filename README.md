@@ -109,7 +109,7 @@ cd /경로/프로젝트_폴더
 
 ```
 uvicorn app:app --host 0.0.0.0 --port 9000 --reload
-새 터미널 창에서 ngrok http --domain=uncomely-alyse-undazed.ngrok-free.dev 9000
+새 터미널 창에서 ngrok http --uncomely-alyse-undazed.ngrok-free.dev 9000
 ```
 * 로컬에서 테스트:
     * Swagger Ui: http://127.0.0.1:9000/docs ↗
