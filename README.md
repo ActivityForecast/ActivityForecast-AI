@@ -114,7 +114,7 @@ uvicorn app:app --host 0.0.0.0 --port 9000 --reload
     * Swagger Ui: http://127.0.0.1:9000/docs ↗
     * 헬스 체크: http://127.0.0.1:9000/ ↗
 * 서버(예: 144.24.73.5)에서 돌릴 경우:
-    * http://서버IP:9000/docs ↗
+    * https://uncomely-alyse-undazed.ngrok-free.dev/docs ↗
 ## 6. API 사용법
 
 ### 6.1 엔드포인트
