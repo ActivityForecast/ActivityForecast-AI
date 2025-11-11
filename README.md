@@ -103,7 +103,7 @@ OWM_API_KEY = "9f8737894290204a7b2793f510443e46"
 ## 5. 서버 실행 방법
 ### 5.1 프로젝트 디렉터리 이동
 ```
-cd /경로/프로젝트_폴더
+cd /Users/gim-yuseong/Desktop/졸업프로젝트/dataset
 ```
 ## 5.2 FastAPI 서버 실행
 
