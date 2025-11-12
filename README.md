@@ -101,9 +101,10 @@ OWM_API_KEY = "9f8737894290204a7b2793f510443e46"
 ```
 그리고 app.py 상단에서 python-dotenv로 로드하도록 수정할 수 있습니다. (현재 코드는 상수 방식 기준으로 작성되어 있으므로, 필요시 팀에서 선택적으로 변경)
 ## 5. 서버 실행 방법
-### 5.1 프로젝트 디렉터리 이동
+### 5.1 로컬에서만 사용시
 ```
 cd /Users/gim-yuseong/Desktop/졸업프로젝트/dataset
+uvicorn app:app --host 127.0.0.1 --port 9000 --reload
 ```
 ## 5.2 FastAPI 서버 실행
 
