@@ -113,17 +113,18 @@ uvicorn app:app --host 0.0.0.0 --port 8000 --reload
 새 터미널 창에서 ngrok http --domain=uncomely-alyse-undazed.ngrok-free.dev 9000
 ```
 ```
-우분투에서
-cd ~/Desktop/download
+우분투에서 실행시
+ssh -i /Users/gim-yuseong/Desktop/졸업프로젝트/dataset/ssh_key.key ubuntu@134.185.108.251 
+cd ~/my_app
+python3 -m venv venv
 source venv/bin/activate
-nohup venv/bin/uvicorn app:app --host 0.0.0.0 --port 8000 --reload > uvicorn.log 2>&1 &
-nohup ngrok http --domain=uncomely-alyse-undazed.ngrok-free.dev 8000 > ngrok.log 2>&1 &
+nohup uvicorn app:app --host 0.0.0.0 --port 8000 &
 ```
 * 로컬에서 테스트:
     * Swagger Ui: http://127.0.0.1:8000/docs ↗
     * 헬스 체크: http://127.0.0.1:8000/ ↗
-* 서버(예: 144.24.73.5)에서 돌릴 경우:
-    * https://uncomely-alyse-undazed.ngrok-free.dev/docs ↗
+* 서버(예: 134.185.108.251)에서 돌릴 경우:
+    * http://134.185.108.251:8000/docs ↗
 ## 6. API 사용법
 
 ### 6.1 엔드포인트
