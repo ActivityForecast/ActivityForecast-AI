@@ -104,24 +104,24 @@ OWM_API_KEY = "9f8737894290204a7b2793f510443e46"
 ### 5.1 로컬에서만 사용시
 ```
 cd /Users/gim-yuseong/Desktop/졸업프로젝트/dataset
-uvicorn app:app --host 127.0.0.1 --port 9000 --reload
+uvicorn app:app --host 127.0.0.1 --port 8000 --reload
 ```
 ## 5.2 FastAPI 서버 실행
 
 ```
-uvicorn app:app --host 0.0.0.0 --port 9000 --reload
+uvicorn app:app --host 0.0.0.0 --port 8000 --reload
 새 터미널 창에서 ngrok http --domain=uncomely-alyse-undazed.ngrok-free.dev 9000
 ```
 ```
 우분투에서
 cd ~/Desktop/download
 source venv/bin/activate
-nohup venv/bin/uvicorn app:app --host 0.0.0.0 --port 9000 --reload > uvicorn.log 2>&1 &
-nohup ngrok http --domain=uncomely-alyse-undazed.ngrok-free.dev 9000 > ngrok.log 2>&1 &
+nohup venv/bin/uvicorn app:app --host 0.0.0.0 --port 8000 --reload > uvicorn.log 2>&1 &
+nohup ngrok http --domain=uncomely-alyse-undazed.ngrok-free.dev 8000 > ngrok.log 2>&1 &
 ```
 * 로컬에서 테스트:
-    * Swagger Ui: http://127.0.0.1:9000/docs ↗
-    * 헬스 체크: http://127.0.0.1:9000/ ↗
+    * Swagger Ui: http://127.0.0.1:8000/docs ↗
+    * 헬스 체크: http://127.0.0.1:8000/ ↗
 * 서버(예: 144.24.73.5)에서 돌릴 경우:
     * https://uncomely-alyse-undazed.ngrok-free.dev/docs ↗
 ## 6. API 사용법
