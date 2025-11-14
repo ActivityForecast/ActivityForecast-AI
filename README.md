@@ -119,7 +119,8 @@ cd ~/my_app
 python3 -m venv venv
 source venv/bin/activate
 nohup uvicorn app:app --host 0.0.0.0 --port 8000 &
-tail -n 20 ~/my_app/nohup.out
+tail -n 20 ~/my_app/nohup.out    실행중인 로그 확인
+pkill uvicorn                    서버종료
 ```
 * 로컬에서 테스트:
     * Swagger Ui: http://127.0.0.1:8000/docs ↗
