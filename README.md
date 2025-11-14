@@ -119,6 +119,7 @@ cd ~/my_app
 python3 -m venv venv
 source venv/bin/activate
 nohup uvicorn app:app --host 0.0.0.0 --port 8000 &
+tail -n 20 ~/my_app/nohup.out
 ```
 * 로컬에서 테스트:
     * Swagger Ui: http://127.0.0.1:8000/docs ↗
