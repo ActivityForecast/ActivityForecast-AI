@@ -118,7 +118,7 @@ ssh -i /Users/gim-yuseong/Desktop/졸업프로젝트/dataset/ssh_key.key ubuntu@
 cd ~/my_app
 python3 -m venv venv
 source venv/bin/activate
-nohup uvicorn app:app --host 0.0.0.0 --port 8000 &
+nohup uvicorn app:app --host 0.0.0.0 --port 8000 & / nohup uvicorn app:app --host 0.0.0.0 --port 8000 > server.log 2>&1 &
 tail -n 20 ~/my_app/nohup.out    실행중인 로그 확인
 pkill uvicorn                    서버종료
 ```
